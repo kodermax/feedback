@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    author:
+        label: Author
+        type: text
+    email:
+        label: Email
+        type: text
+    phone:
+        label: Phone
+        type: text
+    body:
+        label: Body
+        type: textarea
+

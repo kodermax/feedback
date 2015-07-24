@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Entry
+
+# Model Form Field configuration
+form: $/kodermax/feedback/models/entry/fields.yaml
+
+# Model Class name
+modelClass: Kodermax\FeedBack\Models\Entry
+
+# Default redirect location
+defaultRedirect: kodermax/feedback/entries
+
+# Create page
+create:
+    title: Create Entry
+    redirect: kodermax/feedback/entries/update/:id
+    redirectClose: kodermax/feedback/entries
+
+# Update page
+update:
+    title: Edit Entry
+    redirect: kodermax/feedback/entries
+    redirectClose: kodermax/feedback/entries
+
+# Preview page
+preview:
+    title: Preview Entry

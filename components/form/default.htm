@@ -1,0 +1,30 @@
+<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
+</div>
+<form class="row" role="form" id="contactForm" data-request="{{ __SELF__ }}::onPost"
+      data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'">
+    <div class="col-sm-6 commenterInfoInputs">
+        <div class="row m0">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" name="author" id="name" placeholder="Имя">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Телефон">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="row m0">
+            <div class="input-group">
+                <textarea placeholder="Сообщение" name="body" id="body" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">Отправить</button>
+        </div>
+    </div>
+</form>
